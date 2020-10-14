@@ -1,0 +1,16 @@
+{  
+    
+    "main": "hero-academy/hero-academy/app/main.js",
+
+    "scripts": {
+        "test": "jest --forceExit",
+        "start": "electron ."
+    },
+    "devDependencies": {
+        "electron": "^10.1.2",
+        "jest": "^26.4.2"
+    },
+    "dependencies": {
+        "node-fetch": "^2.6.1"
+    }
+}
