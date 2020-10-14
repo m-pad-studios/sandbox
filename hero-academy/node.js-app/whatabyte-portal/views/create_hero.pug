@@ -1,0 +1,244 @@
+extends layout
+
+block layout-content
+  div.View.UserView
+    style.
+   
+      
+      body, div, form, input, select, p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      
+      }
+      h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 36px;
+      color: #fff;
+      z-index: 2;
+      }
+      span.required {
+      color: red;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 30px 0 #095484;
+      
+      }
+      .banner {
+      position: relative;
+      height: 180px;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      
+      }
+      p.top-info {
+      margin: 10px 0;
+      }
+      input, select {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      select {
+      width: 100%;
+      padding: 7px 0;
+      background: transparent;
+      }
+      .item:hover p, .question:hover p, .question label:hover, input:hover::placeholder {
+      color: #095484;
+      }
+      .item input:hover, .item select:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 5px 0 #095484;
+      color: #095484;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      .question input {
+      width: auto;
+      margin: 0;
+      border-radius: 50%;
+      }
+      .question input, .question span {
+      vertical-align: middle;
+      }
+      .question label {
+      display: inline-block;
+      margin: 5px 20px 15px 0;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #0666a3;
+      
+      }
+      @media (min-width: 568px) {
+      .name-item, .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      .name-item input, .city-item input {
+      width: calc(50% - 20px);
+      }
+      .city-item select {
+      width: calc(50% - 8px);
+      }
+      }
+  body
+  div.View.UserView
+  h1.Banner Create a Hero!
+    
+    title Gym Membership Form
+    link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin='anonymous')
+    .testbox
+      form(action='/')
+        .banner
+          h1 Hero Membership Form
+        p.top-info
+          | Want to become a Hero! E.Z P.Z
+        .item
+          p
+            | Hero Name
+            span.required *
+          .name-item
+            input(type='text', name='name', placeholder='First', required='')
+            input(type='text', name='name', placeholder='Last', required='')
+        .question
+          p
+            | Gender
+            span.required *
+          .question-answer
+            label
+              input(type='radio', value='none', name='gender', required='')
+              span Male
+            label
+              input(type='radio', value='none', name='gender', required='')
+              span Female
+        .item
+          p
+            | Your current weight (lbs)
+            span.required *
+          input(type='text', name='name')
+        .item
+          p
+            | Desired weight (lbs)
+            span.required *
+          input(type='text', name='name', required='')
+        .item
+          p
+            | Height
+            span.required *
+          input(type='text', name='name', required='')
+        .item
+          p
+            | BMI
+            span.required *
+          input(type='text', name='name', required='')
+        .item
+          p
+            | Home Address
+            span.required *
+          input(type='text', name='name', placeholder='Street address', required='')
+          .city-item
+            input(type='text', name='name', placeholder='City', required='')
+            input(type='text', name='name', placeholder='Region', required='')
+            input(type='text', name='name', placeholder='Postal / Zip code', required='')
+            select
+              option(value='') Country
+              option(value='1') Russia
+              option(value='2') Germany
+              option(value='3') France
+              option(value='4') Armenia
+              option(value='5') USA
+        .item
+          p
+            | Email
+            span.required *
+          input(type='text', name='name', required='')
+        .item
+          p Phone
+          input(type='text', name='name')
+        .question
+          p
+            | Do you require a personal trainer?
+            span.required *
+          .question-answer
+            label
+              input(type='radio', value='none', name='personal-trainer', required='')
+              span Yes
+            label
+              input(type='radio', value='none', name='personal-trainer', required='')
+              span No
+        .question
+          p
+            | Have you been a Hero before?
+            span.required *
+          .question-answer
+            label
+              input(type='radio', value='none', name='gym-before', required='')
+              span Yes
+            label
+              input(type='radio', value='none', name='gym-before', required='')
+              span No
+        .question
+          p
+            | Membership Type
+            span.required *
+          .question-answer
+            label
+              input(type='radio', value='none', name='membership', required='')
+              span Regular
+            label
+              input(type='radio', value='none', name='membership', required='')
+              span Pro
+            label
+              input(type='radio', value='none', name='membership', required='')
+              span VIP
+        .btn-block
+          button(type='submit', href='/') Apply
