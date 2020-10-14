@@ -1,0 +1,23 @@
+ ,-,-.   ,-,-.   ,-,-.   ,-,-.   ,-,-.   ,-,-.   ,-,-.   ,-,-.
+/.( +.\ / (_o \ /.( +.\ / (_o \ /.( +.\ / (_o \ /.( +.\ / (_o \
+\ {. */ \ o ) / \ {. */ \ o ) / \ {. */ \ o ) / \ {. */ \ o ) /
+ `-`-'   `-'-'   `-`-'   `-'-'   `-`-'   `-'-'   `-`-'   `-'-'
+ ,-,-. 		          Ahhh you've made it!               ,-,-.
+/ (_o \        Welcome aboard the H.U.F.F.L.E.          /.( +.\
+\ o ) /         First get used to the controls:     	\ {. */
+ `-'-'           1. Encodes a HUFFLE image.              `-`-'
+ ,-,-.           2. Decodes a HUFFLE image to view.       ,-,-.
+/.( +.\          3. View HUFFLE code mapping.            / (_o \
+\ {. */          4. View character code mapping.         \ o ) /
+ `-`-'           5. Gives number of characters.           `-'-'
+ ,-,-.           6. Spacial information on image.        ,-,-.
+/ (_o \                                                 /.( +.\
+\ o ) /     When you are comfortable with the controls  \ {. */
+ `-'-'      Go on a HUFFLE observation mission: 7        `-`-'
+ ,-,-.                                                   ,-,-.
+/.( +.\                                                 / (_o \
+\ {. */                                                 \ o ) /
+ `-`-'                                                   `-'-'
+ ,-,-.   ,-,-.   ,-,-.   ,-,-.   ,-,-.   ,-,-.   ,-,-.   ,-,-.
+/.( +.\ / (_o \ /.( +.\ / (_o \ /.( +.\ / (_o \ /.( +.\ / (_o \
+\ {. */ \ o ) / \ {. */ \ o ) / \ {. */ \ o ) / \ {. */ \ o ) /

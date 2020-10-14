@@ -1,0 +1,14 @@
+.---..-----------------------------------------------..---.
+|   ||.---------------------------------------------.||   |
+| o ||| _0_o O/oo  _0_ \O/ _   _0_  O_0_o_O/ooO _0_ ||| o |
+| _ ||| Hello Inquisitor, I will be your A.I. today ||| _ |
+|(_)||| on this observation mission. We are to find |||(_)|
+|   ||| a very important missing data slate from    |||   |
+|.-.||| Grand Inquisitorial Librarium...by any means|||.-.|
+| o |||                                             ||| o |
+|`-'|||Our destination is planet: Garbanzo in the   |||`-'|
+|   |||solar system Bean. There you will find the   |||   |
+|.-.|||data mining facility. Here is the code to    |||.-.|
+| O |||		enter: hummus		                    ||| O |
+|`-'||`---------------------------------------------'||`-'|
+`---'`-----------------------------------------------'`---
