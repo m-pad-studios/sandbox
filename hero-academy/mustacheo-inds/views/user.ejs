@@ -1,0 +1,405 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/login-button.css ">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/free-styles.css">
+    <link rel="stylesheet" href="css/mustacheo_ship.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&amp;display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+  </head>
+
+<body style="background-color: black;">
+<div class="cards" style="z-index: 99;">
+  <div class="card" style="z-index: 99; width: 100%; background-color: rgba(0, 0, 0, 0); ">
+   
+
+     <!-- Telescoping Nav System -->
+                          <div class="sidebar-right sidebar" >
+                            <h1> <u>Nav Sys</u> </h1><button onclick="hideNav()" class="btn navButton">(@)</button>
+        </div>
+   
+     <br>
+      
+       <div id="navSys" class="dd navvy">
+         <div class="bar"> <a
+           class="login-wrapper"
+           href="user_dash"
+           
+           style="z-index: 99"
+         >
+           <div class="login-tail"></div>
+           <div class="login-body">
+             <p>
+               Command  Deck
+             </p>
+           </div> </a
+         ></div>
+         <div class="bar"> <a
+           class="login-wrapper"
+           href="energy_field"
+           
+           style="z-index: 99"
+         >
+           <div class="login-tail"></div>
+           <div class="login-body">
+             <p>
+               Mizz Jelly
+             </p>
+           </div> </a
+         ></div>
+         <div class="bar"> <a
+           class="login-wrapper"
+           href="space_globe"
+           
+           style="z-index: 99"
+         >
+           <div class="login-tail"></div>
+           <div class="login-body">
+             <p>
+               Power Core
+             </p>
+           </div> </a
+         ></div>
+       
+       </div>
+</div>
+        
+</div>
+<div class="cards dd" style=" background-color: rgba(151, 89, 89, 0.8); z-index: 99;">
+
+          <div class="form-popup" id="myForm" style="padding: 10px; z-index: 99;">
+            <form action="/user" method="post">
+              <h1>Login to Ship Console</h1>
+          
+              <div class="form-group row">
+                <label class="col-form-label col-sm-2" for="Space_ID" style="width: 85px; padding: 10px; border: 2px solid green;">Space_ID</label>
+                <div class="col-sm-8">
+                  <input autofocus class="form-control" name="Space_ID" value="<%= model.Space_ID %>"  required/>
+                </div>
+              </div>
+          <span class="alert alert-info" role="alert" id="loginAlert">Must login with Space_ID </span>
+              <button type="submit" class="btn" onclick="openShipConsole()">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        
+        </div>
+        <br>
+<div class="cards" >
+
+
+                        
+    
+  <div class="cards" id="main_card" style="visibility: hidden;">
+    
+
+    <div class="id-card-wrapper">
+      <div id="welcome-card">
+        <div>
+          <div>
+            <div>
+              <div class="dd">
+                <!-- Stars Start -->
+                <div class="stars">
+                  <div class="stars-back"></div>
+                  <div class="stars-middle"></div>
+                  <div class="stars-front"></div>
+                </div>
+                <!-- Stars End -->
+     <div class="card dd" style="height: 25%; background-color: rgba(0, 0, 0, 0); z-index: 99;">
+  <div class="rhombus_box"  style="z-index: 99;">
+          <span class="rhombus_item_wrapper rhombus_item01_wrapper dd"
+            ><span class="rhombus_item dd" onclick="closeInfo()"></span></span
+          ><span class="rhombus_item_wrapper rhombus_item02_wrapper ">
+
+            </span
+          > 
+        </div>  
+                      <article class="main-circle" id="info_card"  >
+                        <div class="animation01">
+                          <div class="rhombus_small">
+                            <div class="rhombus">
+                              <div class="border_box">
+                                <span class="line line01"></span
+                                ><span class="line line02"></span
+                                ><span class="line line03"></span
+                                ><span class="line line04"></span
+                                ><span class="circle circle01"></span
+                                ><span class="circle circle02"></span
+                                ><span class="circle circle03"></span
+                                ><span class="circle circle04"></span
+                                ><span class="animation_line animation_line01"></span
+                                ><span class="animation_line_wrapper animation_line02_wrapper"
+                                  ><span class="animation_line animation_line02"></span></span
+                                ><span class="animation_line animation_line03"></span
+                                ><span class="animation_line_wrapper animation_line04_wrapper"
+                                  ><span class="animation_line animation_line04"></span></span
+                                ><span class="animation_line animation_line05"></span
+                                ><span class="animation_line_wrapper animation_line06_wrapper"
+                                  ><span class="animation_line animation_line06"></span></span
+                                ><span class="animation_line animation_line07"></span
+                                ><span class="animation_line_wrapper animation_line08_wrapper"
+                                  ><span class="animation_line animation_line08"></span
+                                ></span>
+                              </div>
+                              <div class="wave dd">
+                                <div class="wave_wrapper">
+                                  <div class="wave_box dd"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="animation02">
+                          
+                          <div class="double_content " >
+                            <div class="double_wrapper02 dotted02 ">
+                              <div class="dotted_hide">
+                                <div class="double_wrapper01 dotted01 dd">
+                                  <span class="dotted_right dd"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="double_wrapper02 white02">
+                              <div class="double_wrapper01 white01"></div>
+                            </div>
+                            <div class="double_wrapper02 gray02">
+                              <div class="double_wrapper01 gray01 dd"></div>
+                            </div>
+                            <div class="double_wrapper02 orange02">
+                              <div class="double_wrapper01 orange01 dd"></div>
+                            </div>
+                          </div>
+                          <div class="name" >
+                            <p >
+                              <% for (const cadet of model) { %>  
+                              <span style="color: rgb(255, 255, 255);" id="title">  Title: <%= cadet.Name %></span>
+                              <br />
+                              <span style="color: rgb(255, 255, 255);"> Name: <%= cadet.Title %>  </span>
+                             <%}%>
+                
+                              <!-- PROFILE MAIN DASH -->
+                            </p>
+                            <span class="name_circle01 dd"></span
+                            ><span class="name_circle02 dd"></span>
+                          </div>
+                        </div>
+                      </article>
+                      </div>
+                    <div class="cards" style="background-color: rgba(0, 0, 0, 0);">
+                      
+    
+          
+
+<div class="card" style="padding-bottom: 50px;  width: 100%; background-color: rgba(0, 0, 0, 0);">
+ <div style="background: rgba(0, 0, 0, 0);">
+
+                               <div class="dd">
+                                <div >
+                                  <div>
+                                  
+                                    <div >
+                                      
+                              
+                                 
+                                     
+                                      <strong>Time:</strong>
+                                      
+                                        <div id="span" style="color: cyan;"></div>
+                                     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+   <div class=" dd">
+                           
+                                  
+                                        Life Line: <div id="life" style="color: cyan;">0%</div>
+                                  
+                                    </div> <div class="dd">
+                                <div class="id-card">
+                                  <div class="profile-model" id="profile-model">
+                                    <div class="dp"></div>
+                                    <div class="desc">
+                                      <h1 id="hero-tag"></h1>
+                                      <h4>Power Grid:</h4>
+                                      <input class="power-grid" id="water" type="checkbox" />
+                                      <label for="water">
+                                        <div class="power-grid" id="fill"></div> </label
+                                      ><span id="power">0%</span>
+                                    </div>
+                                    <div class="desc">
+                                      <h1 id="hero-tag"></h1>
+                                      <h4 id="power"></h4>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <hr>
+                        <div class="cards dd"   style="z-index: 99;">  
+      
+        <div class="bar"> <a
+          class="login-wrapper"
+          onclick="hideStatusBars()"
+        
+        >
+          <div class="login-tail"></div>
+          <div class="login-body">
+          <p> Health Check</p>
+          </div> </a
+        ></div>
+        
+              <div class="statusBars" style="background-color: rgba(0, 0, 0, 0);">   
+               
+                                  <div class="sidebar-left sidebar dd" id="navvy">
+                            
+        
+                             <span>O.2 lvls:<span id="progress">     
+                              <% for (const cadet of model) { %>
+                                <%= cadet.Oxygen %>
+                                   <% } %>
+                              
+                            
+                             </span></span>
+                             <input id="water" type="checkbox" />
+                             <label for="water">
+                               <div id="fill"></div> </label
+                             ><span>Blood Lvls: <span id="blood"> 
+                     
+                             <% for (const cadet of model) { %>
+                           <%= cadet.Blood %>
+                              <% } %>
+                     
+                     
+                             </span></span>
+                             <input class="blood" id="water" type="checkbox" />
+                             <label for="water">
+                               <div class="blood" id="fill"></div> </label
+                             ><span>Hunger lvls:<span id="hunger">
+     
+                               
+                              <% for (const cadet of model) { %>
+                                <%= cadet.Hunger %>
+                                   <% } %>
+                                
+     
+                             </span></span>
+                             <input class="hunger" id="water" type="checkbox" />
+                             <label for="water">
+                               <div class="hunger" id="fill"></div>
+                             </label> 
+                           
+                                   <span><span>Until next rank<span id="hunger">0%</span></span><span id="knawledge-points"> </span></span>
+                             <input id="water" type="checkbox" />
+                             <label for="water">
+                               <div id="fill"></div>
+                             </label>
+                             
+                           </div>
+                             </div>                    
+     </div>
+     <hr>
+   <ul style="padding-left: 300px; background-color: black; color: cyan;">
+     <h1 ><u>model</u></h1>
+     <li>M.P.D.P.S</li>
+     <h1 ><u>Jelly Container</u></h1>
+     <li><strong>MAX: </strong>100</li>
+     <h1 ><u>POWER GRID: </u></h1>
+     <li><strong>MAX: </strong>100</li>
+     <h1 ><u>Color</u></h1>
+     <li>White</li>
+     <h1 ><u>Spark Color</u></h1>
+     <li>Blue/Yellow</li>
+   </ul>
+<hr style="border: 1px solid yellow;">
+<div class="card" style="background-color: rgba(0, 0, 0, 0)">
+     <div class="rocket " style="bottom: 700px; right: 50px; ">
+    <div class="fuselage">
+
+ 
+
+<div class="reactor"></div>
+
+
+      <div class="body" ><span class="window"></span></div>
+   
+   
+  </div>  
+  </div>
+  
+  </div>
+    <div class="fire">  
+</div>
+  
+   <div class="fire"></div>
+   <div class="fire" style=""></div>
+   <div class="fire" style=""></div>
+
+
+
+</div>
+
+   
+   <!-- Rocket Start -->
+  <!-- <div class="rocket">
+                          <div class="fuselage">
+                            <div class="nose"></div>
+                            <div class="head"><span class="window"></span></div>
+                            <div class="neck"></div>
+                            <div class="body"></div>
+                            <div class="reactor"></div>
+                            <div class="fire">
+                              <div class="spark1"></div>
+                              <div class="spark2"></div>
+                              <div class="spark3"></div>
+                              <div class="spark4"></div>
+                              <div class="spark5"></div>
+                              <div class="spark6"></div>
+                            </div>
+                          </div>
+                          <div class="left-fin"></div>
+                          <div class="left-fin-end"></div>
+                          <div class="right-fin"></div>
+                          <div class="right-fin-end"></div>
+                        </div>   -->
+                        <!-- Rocket End -->
+                       
+                   
+
+
+
+ <div class="dd " >
+                             
+                            </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+</div>
+              
+                    <!-- Scripts-->
+                    <script src="js/bars.js"></script>
+                    <script src="js/timer.js"></script>
+                  </body>
+                </html>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+</html>

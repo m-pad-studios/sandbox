@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mustacheo Inds</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/free-styles.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--if isAuthenticated-->
+
+  <body></body>
+  <div class="card-body text-center nav-header">
+    <div class="my-augfiguration" data-augmented-ui="tr-clip bl-clip br-clip-y both">
+      <h2>Mustacheo Inds!</h2>
+    </div>
+    <canvas id="c"></canvas>
+    <div class="pitch-mixin" data-augmented-ui="      tl-clip tr-scoop b-clip-x both">hi</div>
+  </div>
+  <div class="id-card-wrapper">
+    <div class="id-card">
+    
+        <div class="dp"></div>
+        <div class="desc">
+          <h1 >Welcome new Cadets!</h1>
+          
+<u>Space Cadet Roster</u>
+<ul>
+
+ 
+<form action="/create" method="post">
+    <div class="form-horizontal">
+  
+        <div class="form-group row">
+            <label class="col-form-label col-sm-2" for="Name">Name</label>
+            <div class="col-sm-8">
+              <input autofocus class="form-control" name="Name" value="<%= model.Name %>" required/>
+            </div>
+          </div>
+
+  
+      <div class="form-group row">
+        <label class="col-form-label col-sm-2"></label>
+        <div class="col-sm-10">
+          <input type="submit" value="Save" class="btn btn-default btn-success" />
+          <a class="btn btn-outline-dark cancel" href="/academy">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <canvas id="waves" style="width: 250px;"></canvas>
+  <!-- Scripts-->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/free-styles.js"></script>
+  <script src="./js/nav-controls.js"></script>
+  <div id="root">
+  </div>
+</body>
+
+</html>
+<!-- Place holders to check margins-->
+<!--
+<div style="background-color: aqua;"><h1>Mustacheo Inds!..!</h1></div>
+<div style="background-color: aqua;"><h1>Mustacheo Inds!..!</h1></div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+.login-wrapper {
+	display: grid;
+	grid-template-columns: 20px auto;
+	grid-gap: 10px;
+	min-width: 250px;
+	height: 35px;
+	margin-left: 10px;
+	transform: skewX(-30deg);
+	--bg-color: #000000;
+	--font-color: #000000;
+	--bg-color-hovered: #66ff00;
+	--font-color-hovered: #000000;
+}
+
+.login-wrapper > * {
+	background-color: var(--bg-color);
+}
+
+.login-wrapper:hover .login-tail {
+	background-color: var(--bg-color-hovered);
+}
+
+.login-body {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: var(--font-color);
+}
+
+.login-wrapper:hover .login-body {
+	color: var(--font-color-hovered);
+}
+
+.login-body::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: var(--bg-color-hovered);
+	transition: all 0.3s ease-out;
+}
+
+.login-wrapper:hover .login-body::before {
+	width: 100%;
+}
+
+.login-body p {
+	margin-left: 15px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	transform: skewX(30deg);
+}
+
+.login-tail {
+	transition: all 0s ease-out 0.3s;
+}
+
+.login-wrapper:hover .login-tail {
+	transition: none;
+}

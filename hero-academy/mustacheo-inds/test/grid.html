@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="login-button.css ">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="free-styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&amp;display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: black; ">
+  <div class="id-card-wrapper" id="welcome-card" style="z-index: 99; ">
+    <div>
+      <div class="profile-row" id="profile-row">
+        <div class="grid box" id="energy-field">
+          <header class="dd">
+            <div class="stars">
+              <div class="stars-back"></div>
+              <div class="stars-middle"></div>
+              <div class="stars-front"></div>
+            </div>
+            <div class="card" id="jelly-header">
+              <h1 class="section-heading"><small>Energy Field</small><br>Mizz Jelly</h1>
+              <hr>
+              <p class="large">Still uknown how this creature powers the entire Academy but I'm sure I'll find out eventually...but the size of it!</p>
+            </div>
+          </header>
+          <aside class="sidebar-left sidebar" id="navvy">
+            <div id="myProgress">
+              <div id="myBar">0</div>
+            </div>
+          </aside>
+          <article class="dd">
+            <div class="message_container" id="jelly-alert-msg" style="visibility: hidden;">
+              <div class="message" augmented-ui="exe tl-clip br-clip">
+                <div class="title" augmented-ui="exe tl-clip br-clip">WARNING!</div>
+                <p>You must not try and gather gels before the queen is ready!!!</p>
+                <button id="jelly-alert" onclick="closeAlert()" style="visibility: hidden; z-index: 99;">Okay..sry :/</button>
+              </div>
+            </div>
+            <div class="card" id="jelly-header"><span id="jelly">0</span>
+              <hr><a class="btn-wrapper" href="#" onclick="move()">
+                <div class="btn-tail"></div>
+                <div class="btn-body" style="width: 50%;">
+                  <p>Gather Jelly</p>
+                </div>
+              </a>
+            </div>
+          </article>
+          <aside class="sidebar-right sidebar"><span>
+              <u>Nav Sys</u></span>
+            <!-- CSS ONLY-->
+            <div class="app-body" id="exploration">
+              <!-- CSS ONLY--><a class="btn-wrapper" href="user" onclick="">
+                <div class="btn-tail"></div>
+                <div class="btn-body" style="width: 50%;">
+                  <p>Command Deck</p>
+                </div>
+              </a><br><a class="btn-wrapper"  onclick="jellies()" style="padding: 10px;">
+                <div class="btn-tail"></div>
+                <div class="btn-body" style="width: 50%; ">
+                  <p>Restore power</p>
+                </div>
+              </a>
+              <!-- WITH JAVASCRIPT-->
+              <!-- WITH JAVASCRIPT-->
+            </div>
+          </aside>
+          <footer class="status-panel sidebar">
+            <div class="jelly-container">
+              <div class="bubble-1"></div>
+              <div class="bubble-2"></div>
+              <div class="bubble-3"></div>
+              <div class="bubble-4"></div>
+              <div class="bubble-5"></div>
+              <div class="bubble-6"></div>
+              <div class="bubble-7"></div>
+              <div class="bubble-8"></div>
+              <div class="bubble-9"></div>
+              <div class="bubble-10"></div>
+              <div class="jelly-wrapper" id="jelly-wrapper">
+                <div class="jelly-hair"></div>
+                <div class="jelly-body">
+                  <div class="jelly-inner">
+                    <div class="jelly-eyes"></div>
+                    <div class="jelly-mouth"></div>
+                    <div class="jelly-hands"></div>
+                  </div>
+                </div>
+                <div class="jelly-tentacle-1"></div>
+                <div class="jelly-tentacle-2"></div>
+                <div class="jelly-tentacle-3"></div>
+                <div class="jelly-tentacle-4"></div>
+                <div class="jelly-tentacle-5"></div>
+              </div>
+              <div class="jelly-shadow"></div>
+              <div class="bubble-11"></div>
+              <div class="bubble-12"></div>
+              <div class="bubble-13"></div>
+              <div class="bubble-14"></div>
+              <div class="bubble-15"></div>
+              <div class="bubble-16"></div>
+              <div class="bubble-17"></div>
+              <div class="bubble-18"></div>
+              <div class="bubble-19"></div>
+              <div class="bubble-20"></div>
+            </div>
+          </footer>
+        </div>
+        <!-- Scripts-->
+        <script src="jelly-man.js"></script>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+.id-card-wrapper {
+   
+ 
+text-align: center;
+    
+  }
+
+
+  
+  #confirm {
+    display: none;
+    color: black;
+    background-color: red;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    margin-left: -100px;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+ }
+ #confirm button {
+    background-color: cyan;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 5px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+ }
+
+
+ #restored .msg {
+    text-align: left;
+    color: white;
+ }
+
+ #restored {
+  display: none;
+  background-color: green;
+  border: 1px solid #aaa;
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  margin-left: -100px;
+  padding: 6px 8px 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#restored button {
+  background-color: cyan;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+#restored .msg {
+  text-align: left;
+  color: black;
+}
+
+#info {
+  color: black;
+  display: none;
+  background-color: rgb(230, 255, 1);
+  border: 1px solid #aaa;
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  margin-left: -100px;
+  padding: 6px 8px 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#info button {
+  
+  background-color: cyan;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+#info .msg {
+  text-align: left;
+  color: black;
+}
+
