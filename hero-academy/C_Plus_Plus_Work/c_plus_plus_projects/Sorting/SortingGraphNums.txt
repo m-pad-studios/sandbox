@@ -1,0 +1,48 @@
+Selection Sort	46047	
+
+Bubble Sort	66875	
+
+Bubble Sort Flagged	70407	
+
+Quick Sort	0	
+
+Merge Sort	31	
+
+Heap Sort	490172	
+
+Insertion Sort	11734	
+
+Shell Sort	31	
+
+Selection Sort	17735	
+
+Bubble Sort	11109	
+
+Bubble Sort Flagged	0	
+
+Quick Sort	0	
+
+Merge Sort	16	
+
+Heap Sort	15	
+
+Insertion Sort	0	
+
+Shell Sort	0	
+
+Selection Sort	17500	
+
+Bubble Sort	52344	
+
+Bubble Sort Flagged	54891	
+
+Quick Sort	0	
+
+Merge Sort	16	
+
+Heap Sort	350500	
+
+Insertion Sort	4172	
+
+Shell Sort	31	
+

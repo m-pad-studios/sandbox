@@ -1,0 +1,13 @@
+DAY 2...
+HEIGHT: 7
+WIDTH: 13
+STABILITY REACHED FOR WHITE BLOOD CELLS : 0
+STABILITY REACH FOR VIRUS CELLS : 55
+*************
+*%%%%%%%%%%%*
+*%%%%%%%%%%%*
+*%%%%%%%%%%%*
+*%%%%%%%%%%%*
+*%%%%%%%%%%%*
+*************
+
